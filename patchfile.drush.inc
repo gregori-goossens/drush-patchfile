@@ -535,7 +535,7 @@ function _drush_patchfile_project_apply_patches($project_name, array $patches, $
     }
     catch (Exception $e) {
       drush_set_error('DRUSH_PATCH_ERROR', $e->getMessage());
-      return FALSE;
+      //return FALSE;
     }
   }
   // if (!empty($patches_txt) && !drush_get_option('no-patch-txt') && !file_exists($project_directory . '/PATCHES.txt')) {
